@@ -17,28 +17,7 @@ function MainComponent({ activeTab = "home" }) {
       <div className="max-w-screen-xl mx-auto">
         <div className="flex justify-between items-center">
           {navItems.map((item) => (
-            <a
-              key={item.id}
-              href={item.path}
-              className={`flex flex-col items-center p-2 rounded-lg transition-all duration-300 ${
-                activeTab === item.id
-                  ? "text-[#9f6fb9] dark:text-[#d4b6e6] font-semibold"
-                  : "text-[#6b567c] dark:text-[#9f8aa8]"
-              } hover:text-[#9f6fb9] dark:hover:text-[#d4b6e6]`}
-              onMouseEnter={() => setIsHovered(item.id)}
-              onMouseLeave={() => setIsHovered(null)}
-            >
-              <span
-                className={`text-xl ${
-                  isHovered === item.id ? "animate-bounce" : ""
-                }`}
-              >
-                {item.label.split(" ")[0]}
-              </span>
-              <span className="text-xs font-inter hidden md:block">
-                {item.label.split(" ").slice(1).join(" ")}
-              </span>
-            </a>
+            <></>
           ))}
         </div>
       </div>

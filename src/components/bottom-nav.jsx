@@ -8,7 +8,7 @@ export default function Index() {
   const [isHovered, setIsHovered] = useState(null);
 
   const navItems = [
-    { id: "home", label: "🏰 Home", path: "/" },
+    { id: "home", label: "🏰 Home", path: "/dashboard" },
     { id: "create", label: "✨ Create Pet", path: "/create-pet" },
     { id: "gallery", label: "🎨 Gallery", path: "/pet-gallery" },
     { id: "breed", label: "🌟 Breed Pets", path: "/breed-pets" },
